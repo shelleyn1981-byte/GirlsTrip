@@ -1,0 +1,287 @@
+{
+  "lodging": [
+    {
+      "id": "cottage",
+      "name": "Historic 1890s Cottage",
+      "price": 276,
+      "priceLabel": "$552 total / $276 per person",
+      "desc": "Two bedrooms, two bathrooms and three beds. About a 15-minute walk to the beach and walkable to the historic square.",
+      "pros": [
+        "Most privacy",
+        "Separate bedrooms",
+        "Best for relaxing together",
+        "Free cancellation shown through Oct. 14"
+      ],
+      "cons": [
+        "No hosted breakfast",
+        "Higher total than a basic hotel"
+      ],
+      "link": "https://www.vrbo.com/495373",
+      "badge": "Best overall fit"
+    },
+    {
+      "id": "captains",
+      "name": "Captain's House on the Lake",
+      "price": 302.5,
+      "priceLabel": "$605 total / $302.50 per person",
+      "desc": "Historic B&B-style lodging on the lake. The Captain's Suite is on the first floor and offers a king-size bed.",
+      "pros": [
+        "Historic atmosphere",
+        "Lake setting",
+        "Traditional B&B experience"
+      ],
+      "cons": [
+        "One king bed",
+        "Less privacy than separate bedrooms"
+      ],
+      "link": "https://www.captainshouseonthelake.com/",
+      "badge": "Most charming"
+    },
+    {
+      "id": "hilton",
+      "name": "Hilton Garden Inn Granbury",
+      "price": 220,
+      "priceLabel": "Planning estimate: $220+ per person",
+      "desc": "Lakefront hotel option with familiar amenities, easy parking and a more traditional hotel experience.",
+      "pros": [
+        "Reliable hotel amenities",
+        "Easy parking",
+        "Lakefront location"
+      ],
+      "cons": [
+        "Less historic character",
+        "Final rate still needs confirmation"
+      ],
+      "link": "https://www.hilton.com/en/hotels/dfwgbgi-hilton-garden-inn-granbury/",
+      "badge": "Most convenient"
+    }
+  ],
+  "activities": [
+    {
+      "id": "eagles",
+      "name": "The Long Run: Eagles Tribute",
+      "category": "Entertainment",
+      "price": 60,
+      "priceLabel": "$60 balcony / $65 floor",
+      "time": "Friday, Nov. 13 at 7:30 PM; Saturday, Nov. 14 at 2:00 PM or 7:30 PM",
+      "desc": "A tribute concert at the Granbury Opera House. Four performances were listed for Nov. 12\u201314.",
+      "link": "https://granburytheatrecompany.org/",
+      "notes": "All sales shown as final. Best choice for classic rock and a historic theater setting."
+    },
+    {
+      "id": "aerosmith",
+      "name": "Walk This Way: Aerosmith Tribute",
+      "category": "Entertainment",
+      "price": 45,
+      "priceLabel": "$45 prime / $55 VIP",
+      "time": "Saturday, Nov. 14 at 7:00 PM",
+      "desc": "A high-energy Aerosmith tribute show at Granbury Live.",
+      "link": "https://granburylive.com/",
+      "notes": "Great for a louder, more energetic Saturday night."
+    },
+    {
+      "id": "merlot",
+      "name": "Music, Massage & Merlot",
+      "category": "Entertainment",
+      "price": 15,
+      "priceLabel": "Free admission; wine extra; chair massage $1/minute",
+      "time": "Friday, Nov. 13 from 7:00\u201310:00 PM",
+      "desc": "Karaoke, wine, music and optional chair massage at D'Vine Wine of Granbury.",
+      "link": "https://www.visitgranbury.com/",
+      "notes": "Best-value Friday-night option. Come early for a good seat."
+    },
+    {
+      "id": "ladiesnight",
+      "name": "Craft House Ladies Night",
+      "category": "Creative",
+      "price": 35,
+      "priceLabel": "Planning estimate: $25\u2013$45",
+      "time": "Second Saturday, 7:00\u20139:00 PM",
+      "desc": "Monthly ladies night with a special craft, drinks, snacks and the full Craft Caf\u00e9 menu available.",
+      "link": "https://crafthousegranbury.com/",
+      "notes": "Confirm the November craft and exact price before booking."
+    },
+    {
+      "id": "bingo",
+      "name": "Old Fashioned Bingo",
+      "category": "Entertainment",
+      "price": 10,
+      "priceLabel": "Price not listed; allow about $10",
+      "time": "Second Saturday at 7:00 PM",
+      "desc": "Old-fashioned bingo at Brew Drinkery benefiting a different local charity each month.",
+      "link": "https://www.visitgranbury.com/",
+      "notes": "Confirm that the Nov. 14 event is still scheduled and ask about card prices."
+    },
+    {
+      "id": "candle",
+      "name": "Candle Making Class",
+      "category": "Creative",
+      "price": 40,
+      "priceLabel": "$40 per person",
+      "time": "Saturdays at 12:00 noon and 3:00 PM",
+      "desc": "Create a custom candle by choosing your scent and vessel at Scents of Humor Candle Co.",
+      "link": "https://www.visitgranbury.com/",
+      "notes": "Call ahead to RSVP."
+    },
+    {
+      "id": "canvas12",
+      "name": "Craft House 12\u00d712 Canvas",
+      "category": "Creative",
+      "price": 28,
+      "priceLabel": "$28 per person",
+      "time": "Flexible; confirm availability",
+      "desc": "Choose a pre-traced design and paint a 12\u00d712 canvas.",
+      "link": "https://crafthousegranbury.com/menu",
+      "notes": "Seasonal designs may vary."
+    },
+    {
+      "id": "canvas16",
+      "name": "Craft House 12\u00d716 Canvas",
+      "category": "Creative",
+      "price": 32,
+      "priceLabel": "$32 per person",
+      "time": "Flexible; confirm availability",
+      "desc": "Choose a pre-traced design and paint a 12\u00d716 canvas.",
+      "link": "https://crafthousegranbury.com/menu",
+      "notes": "Seasonal designs may vary."
+    },
+    {
+      "id": "canvas20",
+      "name": "Craft House 16\u00d720 Canvas",
+      "category": "Creative",
+      "price": 40,
+      "priceLabel": "$40 per person",
+      "time": "Flexible; confirm availability",
+      "desc": "Choose a pre-traced design and paint a 16\u00d720 canvas.",
+      "link": "https://crafthousegranbury.com/menu",
+      "notes": "Seasonal designs may vary."
+    },
+    {
+      "id": "tote",
+      "name": "Paint a Tote Bag",
+      "category": "Creative",
+      "price": 25,
+      "priceLabel": "$25 per person",
+      "time": "Flexible; confirm availability",
+      "desc": "Paint a 16\u00d715 cotton tote using paint, stamps or mixed media.",
+      "link": "https://crafthousegranbury.com/menu",
+      "notes": "A useful take-home souvenir."
+    },
+    {
+      "id": "doorhanger",
+      "name": "Monogram Letter Door Hanger",
+      "category": "Creative",
+      "price": 42,
+      "priceLabel": "$42 per person",
+      "time": "Flexible; confirm availability",
+      "desc": "Design and paint a personalized oval door hanger with your monogram.",
+      "link": "https://crafthousegranbury.com/menu",
+      "notes": "Best for a personalized home d\u00e9cor keepsake."
+    },
+    {
+      "id": "woodart",
+      "name": "Layered Wood Art",
+      "category": "Creative",
+      "price": 36,
+      "priceLabel": "$36 per person",
+      "time": "Flexible; confirm availability",
+      "desc": "Paint and assemble dimensional layered wood art.",
+      "link": "https://crafthousegranbury.com/menu",
+      "notes": "Curated design options may change."
+    },
+    {
+      "id": "dinosaur",
+      "name": "Dinosaur Valley State Park",
+      "category": "Outdoor",
+      "price": 8,
+      "priceLabel": "$8 adult day-use fee",
+      "time": "Open daily",
+      "desc": "See dinosaur tracks in the Paluxy River, hike, take photos and visit the interpretive center.",
+      "link": "https://tpwd.texas.gov/state-parks/dinosaur-valley",
+      "notes": "Track visibility depends on river and weather conditions. Reserve in advance."
+    },
+    {
+      "id": "fossil",
+      "name": "Fossil Rim Wildlife Center",
+      "category": "Outdoor",
+      "price": 45,
+      "priceLabel": "Planning estimate: $35\u2013$50 per person",
+      "time": "Morning recommended; hours shown beginning at 8:30 AM",
+      "desc": "Drive-through wildlife experience with giraffes, zebras and other animals.",
+      "link": "https://fossilrim.org/",
+      "notes": "Advance ticket purchase is recommended. Exact November pricing still needs confirmation."
+    },
+    {
+      "id": "market",
+      "name": "Hood County Farmers Market",
+      "category": "Shopping",
+      "price": 20,
+      "priceLabel": "Free entry; suggested spending $10\u2013$50",
+      "time": "Saturday from 9:00 AM\u201312:00 PM",
+      "desc": "Local produce, gifts, soaps, honey and handmade items at 1191 Waters Edge Drive.",
+      "link": "https://www.visitgranbury.com/",
+      "notes": "Everything is grown, made or produced locally."
+    },
+    {
+      "id": "shopping",
+      "name": "Historic Square Shopping",
+      "category": "Shopping",
+      "price": 50,
+      "priceLabel": "Choose $25, $50 or $100+",
+      "time": "Flexible",
+      "desc": "Boutiques, antiques, home d\u00e9cor, gifts, clothing and Christmas shopping around the square.",
+      "link": "https://www.visitgranbury.com/",
+      "notes": "Suggested personal budget: light $25, moderate $50, splurge $100+."
+    },
+    {
+      "id": "squarewalk",
+      "name": "Historic Square & Lake Walk",
+      "category": "Sightseeing",
+      "price": 0,
+      "priceLabel": "Free",
+      "time": "Flexible",
+      "desc": "Explore the courthouse square, historic architecture, lakefront, beach and photo spots.",
+      "link": "https://www.visitgranbury.com/",
+      "notes": "Perfect for an easy, low-cost block of time."
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "1890",
+      "name": "1890 Grille & Lounge",
+      "price": 50,
+      "priceLabel": "Plan $35\u2013$60 per person",
+      "desc": "Upscale dinner on the square. Menu examples found: Texas Trilogy $20 and signature crab cake $25.",
+      "link": "https://eighteenninety.com/",
+      "notes": "Reservations recommended. Best special-occasion dinner."
+    },
+    {
+      "id": "farinas",
+      "name": "Farina's Winery & Caf\u00e9",
+      "price": 28,
+      "priceLabel": "Plan $20\u2013$35 per person",
+      "desc": "Italian food, wine and cocktails in a casual girls-lunch or dinner setting.",
+      "link": "https://www.facebook.com/FarinasGranbury/",
+      "notes": "Good option for a relaxed meal near the square."
+    },
+    {
+      "id": "creperie",
+      "name": "La Cr\u00eaperie in Granbury",
+      "price": 20,
+      "priceLabel": "Plan $15\u2013$25 per person",
+      "desc": "French caf\u00e9 for cr\u00eapes, quiche, coffee and brunch. Daytime hours shown Wednesday\u2013Sunday, 10:00 AM\u20132:30 PM.",
+      "link": "https://www.lacreperieingranbury.com/",
+      "notes": "Friday and Saturday gourmet evenings may require reservations by Thursday at 2:00 PM."
+    },
+    {
+      "id": "snacks",
+      "name": "Coffee, Desserts & Snacks",
+      "price": 20,
+      "priceLabel": "Allow $10\u2013$25 per person per day",
+      "desc": "Build in room for coffee, dessert, farmers-market treats and spontaneous stops.",
+      "link": "https://www.visitgranbury.com/",
+      "notes": "Flexible allowance."
+    }
+  ],
+  "facebook": "https://www.facebook.com/events/1071286358904180"
+}
