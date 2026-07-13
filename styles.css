@@ -648,3 +648,95 @@ body {
     grid-template-columns:1fr;
   }
 }
+
+
+/* ===== PLANNER, MAP & TIMEZONE UPGRADES ===== */
+.countdown-zone{
+  width:100%;
+  margin-top:10px;
+  color:#f4dfb8;
+  font-size:.86rem;
+  font-weight:700;
+  text-align:inherit;
+}
+.planner-tools-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+.checklist{
+  display:grid;
+  gap:10px;
+  margin-top:18px;
+}
+.checklist-row{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  padding:13px 14px;
+  border:1px solid rgba(86,50,71,.12);
+  border-radius:12px;
+  background:#fffaf2;
+  cursor:pointer;
+}
+.checklist-row input{
+  margin-top:4px;
+  transform:scale(1.15);
+}
+.checklist-row span{
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+}
+.checklist-row small{
+  color:var(--muted);
+}
+.share-panel{
+  margin-top:24px;
+}
+.share-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
+.file-btn{
+  position:relative;
+  overflow:hidden;
+  cursor:pointer;
+}
+.file-btn input{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  cursor:pointer;
+}
+.map-card{
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+  min-height:150px;
+  padding:22px;
+  border:1px solid rgba(86,50,71,.12);
+  border-radius:18px;
+  background:#fffaf2;
+  text-decoration:none;
+  box-shadow:0 10px 24px rgba(64,43,34,.07);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.map-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 16px 30px rgba(64,43,34,.12);
+}
+.map-card strong{
+  color:var(--plum);
+  font-family:Georgia,serif;
+  font-size:1.35rem;
+}
+.map-card span{
+  color:var(--muted);
+  line-height:1.5;
+}
+@media(max-width:800px){
+  .planner-tools-grid{grid-template-columns:1fr}
+}

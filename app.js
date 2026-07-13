@@ -12,7 +12,7 @@ async function getData(){ const r = await fetch('data.json'); return r.json(); }
 
 function setupCountdown(){
   const el = $('#countdown'); if(!el) return;
-  const target = new Date('2026-11-13T14:00:00-06:00').getTime();
+  const target = Date.UTC(2026, 10, 13, 15, 0, 0);
   function tick(){
     const diff = Math.max(0,target-Date.now());
     const d=Math.floor(diff/86400000), h=Math.floor(diff/3600000)%24, m=Math.floor(diff/60000)%60, s=Math.floor(diff/1000)%60;
@@ -129,4 +129,84 @@ function setupMobileMenu(){
   if(!button||!nav) return;
   button.addEventListener('click',()=>nav.classList.toggle('open'));
 }
-document.addEventListener('DOMContentLoaded',()=>{setupCountdown();setupPlanner();setupLodging();setupRestaurants();setupItinerary();setupReset();setupMobileMenu();updateChoiceCount();updateTotal();});
+document.addEventListener('DOMContentLoaded',()=>{setupCountdown();setupPlanner();setupLodging();setupRestaurants();setupItinerary();setupReset();setupMobileMenu();updateChoiceCount();updateTotal();setupPlannerTools();setupPlanTransfer();});
+
+
+function getExtendedState(){
+  const base = getState();
+  base.packing = base.packing || [];
+  base.reservations = base.reservations || [];
+  return base;
+}
+
+async function setupPlannerTools(){
+  const packingRoot = $('#packing-list');
+  const reservationRoot = $('#reservation-list');
+  if(!packingRoot && !reservationRoot) return;
+
+  const data = await getData();
+  const state = getExtendedState();
+
+  if(packingRoot){
+    data.packing.forEach((item, index)=>{
+      const id = `pack-${index}`;
+      const row = document.createElement('label');
+      row.className = 'checklist-row';
+      row.innerHTML = `<input type="checkbox" ${state.packing.includes(id)?'checked':''}><span>${item}</span>`;
+      row.querySelector('input').addEventListener('change', e=>{
+        const s=getExtendedState();
+        s.packing=e.target.checked?[...new Set([...s.packing,id])]:s.packing.filter(x=>x!==id);
+        saveState(s);
+      });
+      packingRoot.appendChild(row);
+    });
+  }
+
+  if(reservationRoot){
+    data.reservations.forEach(item=>{
+      const row = document.createElement('label');
+      row.className = 'checklist-row';
+      row.innerHTML = `<input type="checkbox" ${state.reservations.includes(item.id)?'checked':''}><span><strong>${item.name}</strong><small>${item.category}</small></span>`;
+      row.querySelector('input').addEventListener('change', e=>{
+        const s=getExtendedState();
+        s.reservations=e.target.checked?[...new Set([...s.reservations,item.id])]:s.reservations.filter(x=>x!==item.id);
+        saveState(s);
+      });
+      reservationRoot.appendChild(row);
+    });
+  }
+}
+
+function setupPlanTransfer(){
+  const exportButton=$('#export-plan');
+  const importInput=$('#import-plan');
+  const status=$('#share-status');
+
+  if(exportButton){
+    exportButton.addEventListener('click',()=>{
+      const blob=new Blob([JSON.stringify(getExtendedState(),null,2)],{type:'application/json'});
+      const url=URL.createObjectURL(blob);
+      const a=document.createElement('a');
+      a.href=url;
+      a.download='granbury-trip-plan.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      if(status) status.textContent='Trip plan downloaded.';
+    });
+  }
+
+  if(importInput){
+    importInput.addEventListener('change', async e=>{
+      const file=e.target.files[0];
+      if(!file) return;
+      try{
+        const imported=JSON.parse(await file.text());
+        localStorage.setItem(storageKey,JSON.stringify(imported));
+        if(status) status.textContent='Trip plan imported. Refreshing…';
+        setTimeout(()=>location.reload(),600);
+      }catch(error){
+        if(status) status.textContent='That file could not be imported.';
+      }
+    });
+  }
+}

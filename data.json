@@ -283,5 +283,64 @@
       "notes": "Flexible allowance."
     }
   ],
-  "facebook": "https://www.facebook.com/events/1071286358904180"
+  "facebook": "https://www.facebook.com/events/1071286358904180",
+  "packing": [
+    "Photo ID and wallet",
+    "Phone charger",
+    "Portable battery",
+    "Comfortable walking shoes",
+    "Cute dinner outfit",
+    "Light jacket or cardigan",
+    "Umbrella",
+    "Toiletries and makeup",
+    "Medication",
+    "Reusable water bottle",
+    "Sunglasses",
+    "Small crossbody bag",
+    "Tripod or selfie stick",
+    "Shopping tote",
+    "Wine opener for the cottage"
+  ],
+  "reservations": [
+    {
+      "id": "lodging-booked",
+      "name": "Book lodging",
+      "category": "Lodging"
+    },
+    {
+      "id": "eagles-tickets",
+      "name": "Buy Eagles tribute tickets",
+      "category": "Entertainment"
+    },
+    {
+      "id": "aerosmith-tickets",
+      "name": "Buy Aerosmith tribute tickets",
+      "category": "Entertainment"
+    },
+    {
+      "id": "candle-rsvp",
+      "name": "Reserve candle class",
+      "category": "Creative"
+    },
+    {
+      "id": "craft-rsvp",
+      "name": "Confirm Craft House project",
+      "category": "Creative"
+    },
+    {
+      "id": "1890-reservation",
+      "name": "Reserve 1890 Grille",
+      "category": "Dining"
+    },
+    {
+      "id": "fossil-tickets",
+      "name": "Buy Fossil Rim tickets",
+      "category": "Outdoor"
+    },
+    {
+      "id": "dinosaur-reservation",
+      "name": "Reserve Dinosaur Valley day pass",
+      "category": "Outdoor"
+    }
+  ]
 }
