@@ -252,26 +252,25 @@ body {
   color: rgba(255,255,255,.88);
 }
 
-.quick-stay {
-  background-image: url("fall-road.jpg");
+.quick-stay{
+    background-image: url("hotel-room.jpg");
 }
 
-.quick-activities {
-  background-image: url("granbury-street.jpg");
+.quick-activities{
+    background-image: url("granbury-street.jpg");
 }
 
-.quick-food {
-  background-image:
-    linear-gradient(rgba(86,50,71,.22),rgba(86,50,71,.22)),
-    url("fall-road.jpg");
-  background-position: 65% 26%;
+.quick-food{
+    background-image:
+        linear-gradient(rgba(86,50,71,.22),rgba(86,50,71,.22)),
+        url("wine-dinner.jpg");
 }
 
-.quick-itinerary {
-  background-image:
-    linear-gradient(rgba(86,50,71,.18),rgba(86,50,71,.18)),
-    url("hero-shopping.png");
-  background-position: 78% center;
+.quick-itinerary{
+    background-image:
+        linear-gradient(rgba(86,50,71,.18),rgba(86,50,71,.18)),
+        url("lake-sunset.jpg");
+    background-position:center;
 }
 
 .planner-preview {
